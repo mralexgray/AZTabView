@@ -10,7 +10,7 @@
 
 @implementation SFTabViewAppDelegate
 
-@synthesize window;
+@synthesize window, tabView;
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
 	tabView.delegate = self;

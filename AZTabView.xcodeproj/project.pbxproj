@@ -17,6 +17,7 @@
 		0C5CBD1311BD537700448ADD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0C5CBD1111BD537700448ADD /* InfoPlist.strings */; };
 		0CB2673E11984E3100003C49 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CB2673D11984E3100003C49 /* QuartzCore.framework */; };
 		7B92C7C515A72B4A00D9BB9B /* AZDefaultTab.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B92C7C415A72B4A00D9BB9B /* AZDefaultTab.m */; };
+		7B92C7C715A72C2300D9BB9B /* AtoZ.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B92C7C615A72C2300D9BB9B /* AtoZ.framework */; };
 		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
 		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
 /* End PBXBuildFile section */
@@ -42,6 +43,7 @@
 		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
 		7B92C7C315A72B4A00D9BB9B /* AZDefaultTab.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AZDefaultTab.h; sourceTree = "<group>"; };
 		7B92C7C415A72B4A00D9BB9B /* AZDefaultTab.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AZDefaultTab.m; sourceTree = "<group>"; };
+		7B92C7C615A72C2300D9BB9B /* AtoZ.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AtoZ.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.7.sdk/System/Library/Frameworks/AtoZ.framework; sourceTree = DEVELOPER_DIR; };
 		8D1107310486CEB800E47090 /* AZTabView-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "AZTabView-Info.plist"; sourceTree = "<group>"; };
 		8D1107320486CEB800E47090 /* AZTabView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AZTabView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -51,6 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7B92C7C715A72C2300D9BB9B /* AtoZ.framework in Frameworks */,
 				8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */,
 				0CB2673E11984E3100003C49 /* QuartzCore.framework in Frameworks */,
 			);
@@ -142,6 +145,7 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				7B92C7C615A72C2300D9BB9B /* AtoZ.framework */,
 				0C5CBCFD11BD534200448ADD /* MainMenu.xib */,
 				0CB2672111984D2800003C49 /* Images */,
 				8D1107310486CEB800E47090 /* AZTabView-Info.plist */,

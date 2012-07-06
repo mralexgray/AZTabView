@@ -9,15 +9,14 @@
 #import <Cocoa/Cocoa.h>
 #import "SFTabView.h"
 
-@interface SFTabViewAppDelegate : NSObject <NSApplicationDelegate, SFTabViewDelegate> {
-    NSWindow *__unsafe_unretained window;
-    IBOutlet SFTabView *tabView;
-	
+@interface SFTabViewAppDelegate : NSObject <NSApplicationDelegate, SFTabViewDelegate> {	
 	int number;
 	
 }
 
-@property (unsafe_unretained) IBOutlet NSWindow *window;
+@property (nonatomic, retain) IBOutlet NSWindow *window;
+@property (nonatomic, retain) IBOutlet SFTabView *tabView;
+
 
 - (void) removeTab: (id) sender;
 - (void) addTab: (id) sender;

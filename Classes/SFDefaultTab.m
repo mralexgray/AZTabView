@@ -8,8 +8,7 @@
 
 #import "SFDefaultTab.h"
 
-static CGImageRef  activeTab;
-static CGImageRef  inactiveTab;
+
 
 
 @implementation SFLabelLayer
@@ -20,6 +19,10 @@ static CGImageRef  inactiveTab;
 @end
 
 @implementation SFDefaultTab
+{
+	NSImage*  activeTab;
+	NSImage*  inactiveTab;
+}
 
 - (void) setRepresentedObject: (id) representedObject {
 	CAConstraintLayoutManager *layout = [CAConstraintLayoutManager layoutManager];
@@ -28,28 +31,17 @@ static CGImageRef  inactiveTab;
     _representedObject = representedObject;
     self.frame = CGRectMake(0, 0, 125, 28);
 	if(!activeTab) {
-		CFStringRef path = (__bridge CFStringRef)[[NSBundle mainBundle] pathForResource:@"activeTab" ofType:@"png"];
-		CFURLRef imageURL = CFURLCreateWithFileSystemPath(nil, path, kCFURLPOSIXPathStyle, NO);
-		CGImageSourceRef imageSource = CGImageSourceCreateWithURL(imageURL, nil);
-		activeTab = CGImageSourceCreateImageAtIndex(imageSource, 0, nil);
-		CFRelease(imageURL); CFRelease(imageSource);
-
-		
-		path = (__bridge CFStringRef)[[NSBundle mainBundle] pathForResource:@"inactiveTab" ofType:@"png"];
-		imageURL = CFURLCreateWithFileSystemPath(nil, path, kCFURLPOSIXPathStyle, NO);
-		imageSource = CGImageSourceCreateWithURL(imageURL, nil);
-		inactiveTab = CGImageSourceCreateImageAtIndex(imageSource, 0, nil);
-		CFRelease(imageURL); CFRelease(imageSource);
+		activeTab = [NSImage imageNamed:@"activeTab.png"];
+		inactiveTab = [NSImage imageNamed:@"inactiveTab.png"];
 	}
 	
-	[self setContents: (__bridge_transfer id)inactiveTab];
+	[self setContents:inactiveTab];
 
     SFLabelLayer *tabLabel = [SFLabelLayer layer];
 	
 	if ([representedObject objectForKey:@"name"] != nil) {
 		tabLabel.string = [representedObject objectForKey:@"name"];
 	}
-	
 	[tabLabel setFontSize:13.0f];
 	[tabLabel setShadowOpacity:.9f];
 	tabLabel.shadowOffset = CGSizeMake(0, -1);
@@ -93,9 +85,9 @@ static CGImageRef  inactiveTab;
     [CATransaction setValue: (id) kCFBooleanTrue forKey: kCATransactionDisableActions];
 
     if (selected)
-        [self setContents: (__bridge_transfer id)activeTab];
+        [self setContents:activeTab];
     else
-        [self setContents: (__bridge_transfer id)inactiveTab];
+        [self setContents:inactiveTab];
     
     [CATransaction commit];
 
