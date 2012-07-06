@@ -13,7 +13,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "8D1107260486CEB800E47090"
+               BlueprintIdentifier = "7B92C7D115A72FA300D9BB9B"
                BuildableName = "AZTabView.app"
                BlueprintName = "AZTabView"
                ReferencedContainer = "container:AZTabView.xcodeproj">
@@ -31,7 +31,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "8D1107260486CEB800E47090"
+            BlueprintIdentifier = "7B92C7D115A72FA300D9BB9B"
             BuildableName = "AZTabView.app"
             BlueprintName = "AZTabView"
             ReferencedContainer = "container:AZTabView.xcodeproj">
@@ -50,7 +50,7 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "8D1107260486CEB800E47090"
+            BlueprintIdentifier = "7B92C7D115A72FA300D9BB9B"
             BuildableName = "AZTabView.app"
             BlueprintName = "AZTabView"
             ReferencedContainer = "container:AZTabView.xcodeproj">
@@ -68,7 +68,7 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "8D1107260486CEB800E47090"
+            BlueprintIdentifier = "7B92C7D115A72FA300D9BB9B"
             BuildableName = "AZTabView.app"
             BlueprintName = "AZTabView"
             ReferencedContainer = "container:AZTabView.xcodeproj">

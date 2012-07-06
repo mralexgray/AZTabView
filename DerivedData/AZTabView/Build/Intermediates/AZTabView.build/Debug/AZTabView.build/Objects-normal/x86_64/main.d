@@ -1,1 +1,1 @@
-dependencies: /Volumes/2T/ServiceData/git/AZTabView/main.m
+dependencies: /Volumes/2T/ServiceData/git/AZTabView/AZTabView/main.m

@@ -1,0 +1,320 @@
+TSFTabView
+v5
+r1
+cCheck dependencies
+cProcessInfoPlistFile /Volumes/2T/ServiceData/git/AZTabView/DerivedData/AZTabView/Build/Products/Debug/AZTabView.app/Contents/Info.plist AZTabView-Info.plist
+cCpResource Resources/activeTab.png DerivedData/AZTabView/Build/Products/Debug/AZTabView.app/Contents/Resources/activeTab.png
+cCpResource Resources/inactiveTab.png DerivedData/AZTabView/Build/Products/Debug/AZTabView.app/Contents/Resources/inactiveTab.png
+cCompileXIB /Volumes/2T/ServiceData/git/AZTabView/Resources/MainMenu.xib
+cCopyStringsFile /Volumes/2T/ServiceData/git/AZTabView/DerivedData/AZTabView/Build/Products/Debug/AZTabView.app/Contents/Resources/English.lproj/InfoPlist.strings Resources/English.lproj/InfoPlist.strings
+cCpResource Resources/tabBg.png DerivedData/AZTabView/Build/Products/Debug/AZTabView.app/Contents/Resources/tabBg.png
+cProcessPCH /Volumes/2T/ServiceData/git/AZTabView/DerivedData/AZTabView/Build/Intermediates/PrecompiledHeaders/AZTabView_Prefix-bzdhztxgfqvjjzeggvudgfpfopsw/AZTabView_Prefix.pch.pth AZTabView_Prefix.pch normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC DerivedData/AZTabView/Build/Intermediates/AZTabView.build/Debug/SFTabView.build/Objects-normal/x86_64/main.o /Volumes/2T/ServiceData/git/AZTabView/main.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC DerivedData/AZTabView/Build/Intermediates/AZTabView.build/Debug/SFTabView.build/Objects-normal/x86_64/SFDefaultTab.o /Volumes/2T/ServiceData/git/AZTabView/Classes/SFDefaultTab.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC DerivedData/AZTabView/Build/Intermediates/AZTabView.build/Debug/SFTabView.build/Objects-normal/x86_64/SFTabView.o /Volumes/2T/ServiceData/git/AZTabView/Classes/SFTabView.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC DerivedData/AZTabView/Build/Intermediates/AZTabView.build/Debug/SFTabView.build/Objects-normal/x86_64/SFTabViewAppDelegate.o /Volumes/2T/ServiceData/git/AZTabView/Classes/SFTabViewAppDelegate.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cLd /Volumes/2T/ServiceData/git/AZTabView/DerivedData/AZTabView/Build/Products/Debug/AZTabView.app/Contents/MacOS/AZTabView normal x86_64
+cTouch /Volumes/2T/ServiceData/git/AZTabView/DerivedData/AZTabView/Build/Products/Debug/AZTabView.app
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.7.sdk
+c000000004F90F72900000000000000CC
+t1334900521
+s204
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.7.sdk/System/Library/Frameworks/AtoZ.framework/AtoZ
+c000000004FF6E77300000000000D076C
+t1341581171
+s853868
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.7.sdk/System/Library/Frameworks/QuartzCore.framework/QuartzCore
+c000000004FD6C6C500000000000462F4
+t1339475653
+s287476
+
+N/System/Library/Frameworks/Cocoa.framework/Cocoa
+c000000004E98E5D50000000000006560
+t1318643157
+s25952
+
+N/Volumes/2T/ServiceData/git/AZTabView/AZTab/AZDefaultTab.m
+c000000004FF6EBD1000000000000312B
+t1341582289
+s12587
+
+N/Volumes/2T/ServiceData/git/AZTabView/AZTab/AZTabView.m
+c000000004FF6F79400000000000000C0
+t1341585300
+s192
+
+N/Volumes/2T/ServiceData/git/AZTabView/AZTab/AZTabViewAppDelegate.m
+c000000004FF6F75600000000000000E1
+t1341585238
+s225
+
+N/Volumes/2T/ServiceData/git/AZTabView/AZTabView/../AZTab/AZTabViewAppDelegate.m
+c000000004FF6F75600000000000000E1
+t1341585238
+s225
+
+N/Volumes/2T/ServiceData/git/AZTabView/AZTabView_Prefix.pch
+c000000004FF6F1E50000000000000095
+t1341583845
+s149
+
+N/Volumes/2T/ServiceData/git/AZTabView/Classes/SFDefaultTab.m
+c000000004FF6F60C0000000000000B0E
+t1341584908
+s2830
+
+N/Volumes/2T/ServiceData/git/AZTabView/Classes/SFTabView.m
+c000000004FF6F1E50000000000005800
+t1341583845
+s22528
+
+N/Volumes/2T/ServiceData/git/AZTabView/Classes/SFTabViewAppDelegate.m
+c000000004FF6F50600000000000004C0
+t1341584646
+s1216
+
+N/Volumes/2T/ServiceData/git/AZTabView/DerivedData/AZTabView/Build/Intermediates/AZTabView.build/Debug/SFTabView.build/Objects-normal/x86_64/AZDefaultTab.o
+t2
+s0
+
+N/Volumes/2T/ServiceData/git/AZTabView/DerivedData/AZTabView/Build/Intermediates/AZTabView.build/Debug/SFTabView.build/Objects-normal/x86_64/AZTabView.LinkFileList
+c000000004FF6F9050000000000000269
+t1341585669
+s617
+
+N/Volumes/2T/ServiceData/git/AZTabView/DerivedData/AZTabView/Build/Intermediates/AZTabView.build/Debug/SFTabView.build/Objects-normal/x86_64/AZTabView.o
+t2
+s0
+
+N/Volumes/2T/ServiceData/git/AZTabView/DerivedData/AZTabView/Build/Intermediates/AZTabView.build/Debug/SFTabView.build/Objects-normal/x86_64/AZTabViewAppDelegate.o
+t2
+s0
+
+N/Volumes/2T/ServiceData/git/AZTabView/DerivedData/AZTabView/Build/Intermediates/AZTabView.build/Debug/SFTabView.build/Objects-normal/x86_64/SFDefaultTab.o
+t2
+s0
+
+N/Volumes/2T/ServiceData/git/AZTabView/DerivedData/AZTabView/Build/Intermediates/AZTabView.build/Debug/SFTabView.build/Objects-normal/x86_64/SFTabView.o
+t2
+s0
+
+N/Volumes/2T/ServiceData/git/AZTabView/DerivedData/AZTabView/Build/Intermediates/AZTabView.build/Debug/SFTabView.build/Objects-normal/x86_64/SFTabViewAppDelegate.o
+t2
+s0
+
+N/Volumes/2T/ServiceData/git/AZTabView/DerivedData/AZTabView/Build/Intermediates/AZTabView.build/Debug/SFTabView.build/Objects-normal/x86_64/main.o
+t2
+s0
+
+N/Volumes/2T/ServiceData/git/AZTabView/DerivedData/AZTabView/Build/Intermediates/PrecompiledHeaders/AZTabView_Prefix-bzdhztxgfqvjjzeggvudgfpfopsw/AZTabView_Prefix.pch.pth
+t1341584594
+s11510944
+
+N/Volumes/2T/ServiceData/git/AZTabView/DerivedData/AZTabView/Build/Products/Debug/AZTabView.app
+t1341584908
+s102
+
+N/Volumes/2T/ServiceData/git/AZTabView/DerivedData/AZTabView/Build/Products/Debug/AZTabView.app/Contents/Info.plist
+t1341584592
+s1317
+
+N/Volumes/2T/ServiceData/git/AZTabView/DerivedData/AZTabView/Build/Products/Debug/AZTabView.app/Contents/MacOS/AZTabView
+t1341584908
+s93176
+
+N/Volumes/2T/ServiceData/git/AZTabView/DerivedData/AZTabView/Build/Products/Debug/AZTabView.app/Contents/PkgInfo
+t1341584592
+s8
+
+N/Volumes/2T/ServiceData/git/AZTabView/DerivedData/AZTabView/Build/Products/Debug/AZTabView.app/Contents/Resources/English.lproj/InfoPlist.strings
+t1341584234
+s92
+
+N/Volumes/2T/ServiceData/git/AZTabView/DerivedData/AZTabView/Build/Products/Debug/AZTabView.app/Contents/Resources/MainMenu.nib
+t1341584593
+s29922
+
+N/Volumes/2T/ServiceData/git/AZTabView/DerivedData/AZTabView/Build/Products/Debug/AZTabView.app/Contents/Resources/activeTab.png
+t1341584234
+s1023
+
+N/Volumes/2T/ServiceData/git/AZTabView/DerivedData/AZTabView/Build/Products/Debug/AZTabView.app/Contents/Resources/inactiveTab.png
+t1341584234
+s1089
+
+N/Volumes/2T/ServiceData/git/AZTabView/DerivedData/AZTabView/Build/Products/Debug/AZTabView.app/Contents/Resources/tabBg.png
+t1341584234
+s183
+
+N/Volumes/2T/ServiceData/git/AZTabView/Resources/English.lproj/InfoPlist.strings
+c000000004FF6F1E5000000000000002D
+t1341583845
+s45
+
+N/Volumes/2T/ServiceData/git/AZTabView/Resources/MainMenu.xib
+c000000004FF6F1E500000000000304C5
+t1341583845
+s197829
+
+N/Volumes/2T/ServiceData/git/AZTabView/Resources/activeTab.png
+c000000004FF6F1E500000000000003FF
+t1341583845
+s1023
+
+N/Volumes/2T/ServiceData/git/AZTabView/Resources/inactiveTab.png
+c000000004FF6F1E50000000000000441
+t1341583845
+s1089
+
+N/Volumes/2T/ServiceData/git/AZTabView/Resources/tabBg.png
+c000000004FF6F1E500000000000000B7
+t1341583845
+s183
+
+N/Volumes/2T/ServiceData/git/AZTabView/main.m
+c000000004FF6F1E500000000000000FB
+t1341583845
+s251
+
+NAZTabView-Info.plist
+c000000004FF6F1E500000000000003E8
+t1341583845
+s1000
+
+CBuild AST from /Volumes/2T/ServiceData/git/AZTabView/AZTab/AZDefaultTab.m
+r0
+
+CBuild AST from /Volumes/2T/ServiceData/git/AZTabView/AZTab/AZTabView.m
+r0
+
+CBuild AST from /Volumes/2T/ServiceData/git/AZTabView/AZTab/AZTabViewAppDelegate.m
+r0
+
+CBuild AST from /Volumes/2T/ServiceData/git/AZTabView/AZTabView/../AZTab/AZTabViewAppDelegate.m
+r0
+
+CBuild AST from /Volumes/2T/ServiceData/git/AZTabView/Classes/SFDefaultTab.m
+r0
+
+CBuild AST from /Volumes/2T/ServiceData/git/AZTabView/Classes/SFTabView.m
+r0
+
+CBuild AST from /Volumes/2T/ServiceData/git/AZTabView/Classes/SFTabViewAppDelegate.m
+r0
+
+CBuild AST from /Volumes/2T/ServiceData/git/AZTabView/main.m
+r0
+
+CCheck dependencies
+r0
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies088fd68530a7b541^069de48530a7b541^---0#1#0#--18"Check dependencies36"4980B366-1E88-4233-9A3B-1D04CEDA3D70-
+
+CCompileC DerivedData/AZTabView/Build/Intermediates/AZTabView.build/Debug/SFTabView.build/Objects-normal/x86_64/AZDefaultTab.o /Volumes/2T/ServiceData/git/AZTabView/AZTab/AZDefaultTab.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+r0
+
+CCompileC DerivedData/AZTabView/Build/Intermediates/AZTabView.build/Debug/SFTabView.build/Objects-normal/x86_64/AZTabView.o /Volumes/2T/ServiceData/git/AZTabView/AZTab/AZTabView.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+r0
+
+CCompileC DerivedData/AZTabView/Build/Intermediates/AZTabView.build/Debug/SFTabView.build/Objects-normal/x86_64/AZTabViewAppDelegate.o /Volumes/2T/ServiceData/git/AZTabView/AZTab/AZTabViewAppDelegate.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+r0
+
+CCompileC DerivedData/AZTabView/Build/Intermediates/AZTabView.build/Debug/SFTabView.build/Objects-normal/x86_64/AZTabViewAppDelegate.o /Volumes/2T/ServiceData/git/AZTabView/AZTabView/../AZTab/AZTabViewAppDelegate.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+r0
+
+CCompileC DerivedData/AZTabView/Build/Intermediates/AZTabView.build/Debug/SFTabView.build/Objects-normal/x86_64/SFDefaultTab.o /Volumes/2T/ServiceData/git/AZTabView/Classes/SFDefaultTab.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s363278469.920175
+e363278470.080412
+r1
+xCompileC
+xDerivedData/AZTabView/Build/Intermediates/AZTabView.build/Debug/SFTabView.build/Objects-normal/x86_64/SFDefaultTab.o
+x/Volumes/2T/ServiceData/git/AZTabView/Classes/SFDefaultTab.m
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection68"Compile /Volumes/2T/ServiceData/git/AZTabView/Classes/SFDefaultTab.m9dbdeb8530a7b541^639b148630a7b541^---0#0#0#-19%DVTDocumentLocation2@76"file://localhost/Volumes/2T/ServiceData/git/AZTabView/Classes/SFDefaultTab.m0000000000000000^3232"CompileC DerivedData/AZTabView/Build/Intermediates/AZTabView.build/Debug/SFTabView.build/Objects-normal/x86_64/SFDefaultTab.o Classes/SFDefaultTab.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Volumes/2T/ServiceData/git/AZTabView    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch x86_64 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-sign-compare -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.7.sdk -fasm-blocks -Wprotocol -Wdeprecated-declarations -mmacosx-version-min=10.7 -g -fvisibility=hidden -Wno-conversion -Wno-sign-conversion "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -iquote /Volumes/2T/ServiceData/git/AZTabView/DerivedData/AZTabView/Build/Intermediates/AZTabView.build/Debug/SFTabView.build/AZTabView-generated-files.hmap -I/Volumes/2T/ServiceData/git/AZTabView/DerivedData/AZTabView/Build/Intermediates/AZTabView.build/Debug/SFTabView.build/AZTabView-own-target-headers.hmap -I/Volumes/2T/ServiceData/git/AZTabView/DerivedData/AZTabView/Build/Intermediates/AZTabView.build/Debug/SFTabView.build/AZTabView-all-target-headers.hmap -iquote /Volumes/2T/ServiceData/git/AZTabView/DerivedData/AZTabView/Build/Intermediates/AZTabView.build/Debug/SFTabView.build/AZTabView-project-headers.hmap -I/Volumes/2T/ServiceData/git/AZTabView/DerivedData/AZTabView/Build/Products/Debug/include -I/Volumes/2T/ServiceData/git/AZTabView/DerivedData/AZTabView/Build/Intermediates/AZTabView.build/Debug/SFTabView.build/DerivedSources/x86_64 -I/Volumes/2T/ServiceData/git/AZTabView/DerivedData/AZTabView/Build/Intermediates/AZTabView.build/Debug/SFTabView.build/DerivedSources -F/Volumes/2T/ServiceData/git/AZTabView/DerivedData/AZTabView/Build/Products/Debug -include /Volumes/2T/ServiceData/git/AZTabView/DerivedData/AZTabView/Build/Intermediates/PrecompiledHeaders/AZTabView_Prefix-bzdhztxgfqvjjzeggvudgfpfopsw/AZTabView_Prefix.pch -MMD -MT dependencies -MF /Volumes/2T/ServiceData/git/AZTabView/DerivedData/AZTabView/Build/Intermediates/AZTabView.build/Debug/SFTabView.build/Objects-normal/x86_64/SFDefaultTab.d --serialize-diagnostics /Volumes/2T/ServiceData/git/AZTabView/DerivedData/AZTabView/Build/Intermediates/AZTabView.build/Debug/SFTabView.build/Objects-normal/x86_64/SFDefaultTab.dia -c /Volumes/2T/ServiceData/git/AZTabView/Classes/SFDefaultTab.m -o /Volumes/2T/ServiceData/git/AZTabView/DerivedData/AZTabView/Build/Intermediates/AZTabView.build/Debug/SFTabView.build/Objects-normal/x86_64/SFDefaultTab.o36"292B8E03-5E47-4C4B-992C-18D89F47B6EE-
+
+CCompileC DerivedData/AZTabView/Build/Intermediates/AZTabView.build/Debug/SFTabView.build/Objects-normal/x86_64/SFTabView.o /Volumes/2T/ServiceData/git/AZTabView/Classes/SFTabView.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s363278469.920754
+e363278470.125907
+r1
+xCompileC
+xDerivedData/AZTabView/Build/Intermediates/AZTabView.build/Debug/SFTabView.build/Objects-normal/x86_64/SFTabView.o
+x/Volumes/2T/ServiceData/git/AZTabView/Classes/SFTabView.m
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection65"Compile /Volumes/2T/ServiceData/git/AZTabView/Classes/SFTabView.mfdd9eb8530a7b541^923b208630a7b541^---0#0#0#-19%DVTDocumentLocation2@73"file://localhost/Volumes/2T/ServiceData/git/AZTabView/Classes/SFTabView.m0000000000000000^3214"CompileC DerivedData/AZTabView/Build/Intermediates/AZTabView.build/Debug/SFTabView.build/Objects-normal/x86_64/SFTabView.o Classes/SFTabView.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Volumes/2T/ServiceData/git/AZTabView    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch x86_64 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-sign-compare -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.7.sdk -fasm-blocks -Wprotocol -Wdeprecated-declarations -mmacosx-version-min=10.7 -g -fvisibility=hidden -Wno-conversion -Wno-sign-conversion "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -iquote /Volumes/2T/ServiceData/git/AZTabView/DerivedData/AZTabView/Build/Intermediates/AZTabView.build/Debug/SFTabView.build/AZTabView-generated-files.hmap -I/Volumes/2T/ServiceData/git/AZTabView/DerivedData/AZTabView/Build/Intermediates/AZTabView.build/Debug/SFTabView.build/AZTabView-own-target-headers.hmap -I/Volumes/2T/ServiceData/git/AZTabView/DerivedData/AZTabView/Build/Intermediates/AZTabView.build/Debug/SFTabView.build/AZTabView-all-target-headers.hmap -iquote /Volumes/2T/ServiceData/git/AZTabView/DerivedData/AZTabView/Build/Intermediates/AZTabView.build/Debug/SFTabView.build/AZTabView-project-headers.hmap -I/Volumes/2T/ServiceData/git/AZTabView/DerivedData/AZTabView/Build/Products/Debug/include -I/Volumes/2T/ServiceData/git/AZTabView/DerivedData/AZTabView/Build/Intermediates/AZTabView.build/Debug/SFTabView.build/DerivedSources/x86_64 -I/Volumes/2T/ServiceData/git/AZTabView/DerivedData/AZTabView/Build/Intermediates/AZTabView.build/Debug/SFTabView.build/DerivedSources -F/Volumes/2T/ServiceData/git/AZTabView/DerivedData/AZTabView/Build/Products/Debug -include /Volumes/2T/ServiceData/git/AZTabView/DerivedData/AZTabView/Build/Intermediates/PrecompiledHeaders/AZTabView_Prefix-bzdhztxgfqvjjzeggvudgfpfopsw/AZTabView_Prefix.pch -MMD -MT dependencies -MF /Volumes/2T/ServiceData/git/AZTabView/DerivedData/AZTabView/Build/Intermediates/AZTabView.build/Debug/SFTabView.build/Objects-normal/x86_64/SFTabView.d --serialize-diagnostics /Volumes/2T/ServiceData/git/AZTabView/DerivedData/AZTabView/Build/Intermediates/AZTabView.build/Debug/SFTabView.build/Objects-normal/x86_64/SFTabView.dia -c /Volumes/2T/ServiceData/git/AZTabView/Classes/SFTabView.m -o /Volumes/2T/ServiceData/git/AZTabView/DerivedData/AZTabView/Build/Intermediates/AZTabView.build/Debug/SFTabView.build/Objects-normal/x86_64/SFTabView.o36"D7C12FD7-AE07-4BA8-83C8-5C65349A864D-
+
+CCompileC DerivedData/AZTabView/Build/Intermediates/AZTabView.build/Debug/SFTabView.build/Objects-normal/x86_64/SFTabViewAppDelegate.o /Volumes/2T/ServiceData/git/AZTabView/Classes/SFTabViewAppDelegate.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s363278469.920763
+e363278470.080170
+r1
+xCompileC
+xDerivedData/AZTabView/Build/Intermediates/AZTabView.build/Debug/SFTabView.build/Objects-normal/x86_64/SFTabViewAppDelegate.o
+x/Volumes/2T/ServiceData/git/AZTabView/Classes/SFTabViewAppDelegate.m
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection76"Compile /Volumes/2T/ServiceData/git/AZTabView/Classes/SFTabViewAppDelegate.m62daeb8530a7b541^1686148630a7b541^---0#0#0#-19%DVTDocumentLocation2@84"file://localhost/Volumes/2T/ServiceData/git/AZTabView/Classes/SFTabViewAppDelegate.m0000000000000000^3280"CompileC DerivedData/AZTabView/Build/Intermediates/AZTabView.build/Debug/SFTabView.build/Objects-normal/x86_64/SFTabViewAppDelegate.o Classes/SFTabViewAppDelegate.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Volumes/2T/ServiceData/git/AZTabView    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch x86_64 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-sign-compare -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.7.sdk -fasm-blocks -Wprotocol -Wdeprecated-declarations -mmacosx-version-min=10.7 -g -fvisibility=hidden -Wno-conversion -Wno-sign-conversion "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -iquote /Volumes/2T/ServiceData/git/AZTabView/DerivedData/AZTabView/Build/Intermediates/AZTabView.build/Debug/SFTabView.build/AZTabView-generated-files.hmap -I/Volumes/2T/ServiceData/git/AZTabView/DerivedData/AZTabView/Build/Intermediates/AZTabView.build/Debug/SFTabView.build/AZTabView-own-target-headers.hmap -I/Volumes/2T/ServiceData/git/AZTabView/DerivedData/AZTabView/Build/Intermediates/AZTabView.build/Debug/SFTabView.build/AZTabView-all-target-headers.hmap -iquote /Volumes/2T/ServiceData/git/AZTabView/DerivedData/AZTabView/Build/Intermediates/AZTabView.build/Debug/SFTabView.build/AZTabView-project-headers.hmap -I/Volumes/2T/ServiceData/git/AZTabView/DerivedData/AZTabView/Build/Products/Debug/include -I/Volumes/2T/ServiceData/git/AZTabView/DerivedData/AZTabView/Build/Intermediates/AZTabView.build/Debug/SFTabView.build/DerivedSources/x86_64 -I/Volumes/2T/ServiceData/git/AZTabView/DerivedData/AZTabView/Build/Intermediates/AZTabView.build/Debug/SFTabView.build/DerivedSources -F/Volumes/2T/ServiceData/git/AZTabView/DerivedData/AZTabView/Build/Products/Debug -include /Volumes/2T/ServiceData/git/AZTabView/DerivedData/AZTabView/Build/Intermediates/PrecompiledHeaders/AZTabView_Prefix-bzdhztxgfqvjjzeggvudgfpfopsw/AZTabView_Prefix.pch -MMD -MT dependencies -MF /Volumes/2T/ServiceData/git/AZTabView/DerivedData/AZTabView/Build/Intermediates/AZTabView.build/Debug/SFTabView.build/Objects-normal/x86_64/SFTabViewAppDelegate.d --serialize-diagnostics /Volumes/2T/ServiceData/git/AZTabView/DerivedData/AZTabView/Build/Intermediates/AZTabView.build/Debug/SFTabView.build/Objects-normal/x86_64/SFTabViewAppDelegate.dia -c /Volumes/2T/ServiceData/git/AZTabView/Classes/SFTabViewAppDelegate.m -o /Volumes/2T/ServiceData/git/AZTabView/DerivedData/AZTabView/Build/Intermediates/AZTabView.build/Debug/SFTabView.build/Objects-normal/x86_64/SFTabViewAppDelegate.o36"6746C409-B5AD-44C6-89B9-24329504B8FF-
+
+CCompileC DerivedData/AZTabView/Build/Intermediates/AZTabView.build/Debug/SFTabView.build/Objects-normal/x86_64/main.o /Volumes/2T/ServiceData/git/AZTabView/main.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s363278469.920144
+e363278469.972942
+r1
+xCompileC
+xDerivedData/AZTabView/Build/Intermediates/AZTabView.build/Debug/SFTabView.build/Objects-normal/x86_64/main.o
+x/Volumes/2T/ServiceData/git/AZTabView/main.m
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection52"Compile /Volumes/2T/ServiceData/git/AZTabView/main.m07b5eb8530a7b541^cb12f98530a7b541^---0#0#0#-19%DVTDocumentLocation2@60"file://localhost/Volumes/2T/ServiceData/git/AZTabView/main.m0000000000000000^3168"CompileC DerivedData/AZTabView/Build/Intermediates/AZTabView.build/Debug/SFTabView.build/Objects-normal/x86_64/main.o main.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Volumes/2T/ServiceData/git/AZTabView    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch x86_64 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-sign-compare -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.7.sdk -fasm-blocks -Wprotocol -Wdeprecated-declarations -mmacosx-version-min=10.7 -g -fvisibility=hidden -Wno-conversion -Wno-sign-conversion "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -iquote /Volumes/2T/ServiceData/git/AZTabView/DerivedData/AZTabView/Build/Intermediates/AZTabView.build/Debug/SFTabView.build/AZTabView-generated-files.hmap -I/Volumes/2T/ServiceData/git/AZTabView/DerivedData/AZTabView/Build/Intermediates/AZTabView.build/Debug/SFTabView.build/AZTabView-own-target-headers.hmap -I/Volumes/2T/ServiceData/git/AZTabView/DerivedData/AZTabView/Build/Intermediates/AZTabView.build/Debug/SFTabView.build/AZTabView-all-target-headers.hmap -iquote /Volumes/2T/ServiceData/git/AZTabView/DerivedData/AZTabView/Build/Intermediates/AZTabView.build/Debug/SFTabView.build/AZTabView-project-headers.hmap -I/Volumes/2T/ServiceData/git/AZTabView/DerivedData/AZTabView/Build/Products/Debug/include -I/Volumes/2T/ServiceData/git/AZTabView/DerivedData/AZTabView/Build/Intermediates/AZTabView.build/Debug/SFTabView.build/DerivedSources/x86_64 -I/Volumes/2T/ServiceData/git/AZTabView/DerivedData/AZTabView/Build/Intermediates/AZTabView.build/Debug/SFTabView.build/DerivedSources -F/Volumes/2T/ServiceData/git/AZTabView/DerivedData/AZTabView/Build/Products/Debug -include /Volumes/2T/ServiceData/git/AZTabView/DerivedData/AZTabView/Build/Intermediates/PrecompiledHeaders/AZTabView_Prefix-bzdhztxgfqvjjzeggvudgfpfopsw/AZTabView_Prefix.pch -MMD -MT dependencies -MF /Volumes/2T/ServiceData/git/AZTabView/DerivedData/AZTabView/Build/Intermediates/AZTabView.build/Debug/SFTabView.build/Objects-normal/x86_64/main.d --serialize-diagnostics /Volumes/2T/ServiceData/git/AZTabView/DerivedData/AZTabView/Build/Intermediates/AZTabView.build/Debug/SFTabView.build/Objects-normal/x86_64/main.dia -c /Volumes/2T/ServiceData/git/AZTabView/main.m -o /Volumes/2T/ServiceData/git/AZTabView/DerivedData/AZTabView/Build/Intermediates/AZTabView.build/Debug/SFTabView.build/Objects-normal/x86_64/main.o36"E4DF8C06-1626-47B5-9631-3BBC47019398-
+
+CCompileXIB /Volumes/2T/ServiceData/git/AZTabView/Resources/MainMenu.xib
+r0
+
+CCopyStringsFile /Volumes/2T/ServiceData/git/AZTabView/DerivedData/AZTabView/Build/Products/Debug/AZTabView.app/Contents/Resources/English.lproj/InfoPlist.strings Resources/English.lproj/InfoPlist.strings
+r0
+
+CCpResource Resources/activeTab.png DerivedData/AZTabView/Build/Products/Debug/AZTabView.app/Contents/Resources/activeTab.png
+r0
+
+CCpResource Resources/inactiveTab.png DerivedData/AZTabView/Build/Products/Debug/AZTabView.app/Contents/Resources/inactiveTab.png
+r0
+
+CCpResource Resources/tabBg.png DerivedData/AZTabView/Build/Products/Debug/AZTabView.app/Contents/Resources/tabBg.png
+r0
+
+CLd /Volumes/2T/ServiceData/git/AZTabView/DerivedData/AZTabView/Build/Products/Debug/AZTabView.app/Contents/MacOS/AZTabView normal x86_64
+s363278470.132566
+e363278470.281315
+r1
+xLd
+x/Volumes/2T/ServiceData/git/AZTabView/DerivedData/AZTabView/Build/Products/Debug/AZTabView.app/Contents/MacOS/AZTabView
+xnormal
+xx86_64
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection124"Link /Volumes/2T/ServiceData/git/AZTabView/DerivedData/AZTabView/Build/Products/Debug/AZTabView.app/Contents/MacOS/AZTabView3509228630a7b541^7504488630a7b541^---0#0#0#--958"Ld DerivedData/AZTabView/Build/Products/Debug/AZTabView.app/Contents/MacOS/AZTabView normal x86_64    cd /Volumes/2T/ServiceData/git/AZTabView    setenv MACOSX_DEPLOYMENT_TARGET 10.7    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.7.sdk -L/Volumes/2T/ServiceData/git/AZTabView/DerivedData/AZTabView/Build/Products/Debug -F/Volumes/2T/ServiceData/git/AZTabView/DerivedData/AZTabView/Build/Products/Debug -filelist /Volumes/2T/ServiceData/git/AZTabView/DerivedData/AZTabView/Build/Intermediates/AZTabView.build/Debug/SFTabView.build/Objects-normal/x86_64/AZTabView.LinkFileList -mmacosx-version-min=10.7 -fobjc-arc -framework AtoZ -framework Cocoa -framework QuartzCore -o /Volumes/2T/ServiceData/git/AZTabView/DerivedData/AZTabView/Build/Products/Debug/AZTabView.app/Contents/MacOS/AZTabView36"91E291C6-E74B-409A-8D48-2BAD2AE6E9F0-
+
+CProcessInfoPlistFile /Volumes/2T/ServiceData/git/AZTabView/DerivedData/AZTabView/Build/Products/Debug/AZTabView.app/Contents/Info.plist AZTabView-Info.plist
+r0
+
+CProcessPCH /Volumes/2T/ServiceData/git/AZTabView/DerivedData/AZTabView/Build/Intermediates/PrecompiledHeaders/AZTabView_Prefix-bzdhztxgfqvjjzeggvudgfpfopsw/AZTabView_Prefix.pch.pth AZTabView_Prefix.pch normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+r0
+
+CProcessPCH /Volumes/2T/ServiceData/git/AZTabView/DerivedData/AZTabView/Index/PrecompiledHeaders/AZTabView_Prefix-gniyrtptzscgksabydhrtyeubmuu_ast/AZTabView_Prefix.pch.pth AZTabView_Prefix.pch normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.astbuilder
+r0
+
+CTouch /Volumes/2T/ServiceData/git/AZTabView/DerivedData/AZTabView/Build/Products/Debug/AZTabView.app
+s363278470.289374
+e363278470.297847
+r1
+xTouch
+x/Volumes/2T/ServiceData/git/AZTabView/DerivedData/AZTabView/Build/Products/Debug/AZTabView.app
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection100"Touch /Volumes/2T/ServiceData/git/AZTabView/DerivedData/AZTabView/Build/Products/Debug/AZTabView.app25244a8630a7b541^14414c8630a7b541^---0#0#0#--225"Touch DerivedData/AZTabView/Build/Products/Debug/AZTabView.app    cd /Volumes/2T/ServiceData/git/AZTabView    /usr/bin/touch -c /Volumes/2T/ServiceData/git/AZTabView/DerivedData/AZTabView/Build/Products/Debug/AZTabView.app36"CE2983F0-68C6-4598-BD21-20AB16C6E6E2-
+
