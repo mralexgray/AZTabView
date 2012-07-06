@@ -53,7 +53,7 @@
  @brief The SFTabView Delegate.
  
  */
-@property (retain) id delegate;
+@property  id delegate;
 
 
 /** 
@@ -61,7 +61,7 @@
  
  This class should be conform to the SFTab protocoll.  
  */
-@property (retain) NSString *defaultTabClassName;
+@property  NSString *defaultTabClassName;
 
 
 /** 

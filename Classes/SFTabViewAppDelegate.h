@@ -10,14 +10,14 @@
 #import "SFTabView.h"
 
 @interface SFTabViewAppDelegate : NSObject <NSApplicationDelegate, SFTabViewDelegate> {
-    NSWindow *window;
+    NSWindow *__unsafe_unretained window;
     IBOutlet SFTabView *tabView;
 	
 	int number;
 	
 }
 
-@property (assign) IBOutlet NSWindow *window;
+@property (unsafe_unretained) IBOutlet NSWindow *window;
 
 - (void) removeTab: (id) sender;
 - (void) addTab: (id) sender;
