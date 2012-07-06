@@ -4,5 +4,7 @@ whamoo.pbxuser
 whamoo.perpspectivev3
 whamoo.perspectivev3
 whamoo.mode1v3
+DerivedData
+.gitignore
 .DS_Store
 *.pyc
