@@ -8,7 +8,6 @@
 
 #import <Cocoa/Cocoa.h>
 #import <QuartzCore/QuartzCore.h>
-#import "SFTabView.h"
 #import <AtoZ/AtoZ.h>
 
 @interface AZLabelLayer : CATextLayer {}
@@ -22,18 +21,12 @@
 
 
 @interface AZColorBar : CALayer
-@property (strong, nonatomic) CAShapeLayer *silhouette;
 @property (strong, nonatomic) id representedObject;
-//@property (strong, nonatomic) NSImage *currentImage;
-//@property (strong, nonatomic) NSImage *active;
-//@property (strong, nonatomic) NSImage *inactive;
 @property (assign, nonatomic) BOOL selected;
 @end
 
 @interface AZDefaultTab : CALayer
-@property (strong, nonatomic) CAShapeLayer *silhouette;
 @property (strong, nonatomic) id representedObject;
 @property (assign, nonatomic) BOOL selected;
 @property (assign, nonatomic) BOOL highlighted;
-@property (strong, nonatomic) CAConstraintLayoutManager *layout;
 @end

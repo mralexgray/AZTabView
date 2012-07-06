@@ -28,6 +28,7 @@
 		7B92C7EE15A72FFF00D9BB9B /* AZDefaultTab.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B92C7C415A72B4A00D9BB9B /* AZDefaultTab.m */; };
 		7B92C7F015A7300300D9BB9B /* AZTabView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B92C7CC15A72F1500D9BB9B /* AZTabView.m */; };
 		7B92C7F315A7304000D9BB9B /* PAColorSwatchChooser.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B92C7F215A7304000D9BB9B /* PAColorSwatchChooser.m */; };
+		7B92C7F415A7368300D9BB9B /* tabBg.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C5CBCFE11BD534200448ADD /* tabBg.png */; };
 		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
 		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
 /* End PBXBuildFile section */
@@ -202,8 +203,8 @@
 		7B92C7C215A72B2A00D9BB9B /* AZTabView */ = {
 			isa = PBXGroup;
 			children = (
-				7B92C7C315A72B4A00D9BB9B /* AZDefaultTab.h */,
 				7B92C7D615A72FA300D9BB9B /* AZTabView */,
+				7B92C7C315A72B4A00D9BB9B /* AZDefaultTab.h */,
 				7B92C7C415A72B4A00D9BB9B /* AZDefaultTab.m */,
 				7B92C7CB15A72F1500D9BB9B /* AZTabView.h */,
 				7B92C7CC15A72F1500D9BB9B /* AZTabView.m */,
@@ -304,6 +305,7 @@
 			files = (
 				7B92C7DB15A72FA300D9BB9B /* InfoPlist.strings in Resources */,
 				7B92C7E115A72FA300D9BB9B /* Credits.rtf in Resources */,
+				7B92C7F415A7368300D9BB9B /* tabBg.png in Resources */,
 				7B92C7E715A72FA400D9BB9B /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

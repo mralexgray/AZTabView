@@ -14,12 +14,13 @@
 //@end
 @interface AZColorBar ()
 @property (strong, nonatomic) CAConstraintLayoutManager *layout;
+@property (strong, nonatomic) CAShapeLayer *barShapes;
 @end
 @implementation AZColorBar {
 		 AZFile *_rep;
 }
 
-@synthesize representedObject = _rep, layout, selected, silhouette;
+@synthesize representedObject = _rep, layout, selected, barShapes;
 //active, inactive, currentImage, ;
 
 - (id)init
@@ -27,9 +28,12 @@
     self = [super init];
     if (self) {
 		float wide = ([[NSScreen mainScreen]frame].size.width/ [NSColor fengshui].count);
-		NSRect u = NSMakeRect(0,0,wide,20);
+		NSRect u = NSMakeRect(0,self.superlayer.bounds.size.height-20,wide,20);
 		self.frame = u;
+		self.name = @"bar";
+		self.backgroundColor = cgRANDOMCOLOR;	
 	}
+	
 	return self;	
 }
 - (void) setRepresentedObject:(id)representedObject {
@@ -37,65 +41,53 @@
 	[self makeShapes]; 
 }
 -(void) makeShapes {
-	silhouette = [CAShapeLayer layer];
-	silhouette.fillColor = _rep.color.CGColor;
-	silhouette.shadowOffset = CGSizeMake(2, -2);
-	silhouette.shadowRadius = 5.0;
-	silhouette.shadowColor = cgBLACK;
-	silhouette.shadowOpacity = 0.8;
-	silhouette.lineWidth = 3;
-	silhouette.strokeColor = cgWHITE;
+	barShapes = [CAShapeLayer layer];
+	barShapes.fillColor = _rep.color.CGColor;
+	barShapes.frame = self.bounds;
+	barShapes.anchorPoint = CGPointMake(.5,1);
+	barShapes.position = CGPointMake(.5,1);
+	barShapes.autoresizingMask = kCALayerWidthSizable;
+	
+	barShapes.shadowOffset = CGSizeMake(2, -2);
+	barShapes.shadowRadius = 5.0;
+	barShapes.shadowColor = cgBLACK;
+	barShapes.shadowOpacity = 0.8;
+	barShapes.lineWidth = 3;
+	barShapes.strokeColor = cgWHITE;
 	NSBezierPath *path = [NSBezierPath bezierPathWithRoundedRect:self.frame cornerRadius:5 inCorners:OSBottomLeftCorner | OSBottomRightCorner];
-	silhouette.path = [path quartzPath];
-	[self addSublayer: silhouette];
+	barShapes.path = [path quartzPath];
+	[self addSublayer: barShapes];
 }
 
-@end
-
-
-@implementation AZLabelLayer
 - (BOOL)containsPoint:(CGPoint)p {	return FALSE; }
 @end
-@interface AZLassoLayer : CAShapeLayer
-@end
-@implementation AZLassoLayer
-- (BOOL)containsPoint:(CGPoint)p {	return FALSE; }
-@end
+
 
 @interface AZDefaultTab ()
-@property (strong, nonatomic) AZLabelLayer *label;
+@property (strong, nonatomic) CATextLayerNoHit *label;
 @property (strong, nonatomic) CALayerNoHit *over;
+@property (strong, nonatomic) CAConstraintLayoutManager *layout;
+@property (strong, nonatomic) CAShapeLayer *silhouette;
 @end
 
 @implementation AZDefaultTab {	 
 	AZFile *_rep; 
-	AZLassoLayer *highlightLayer; 
-	CALayer *shineLayer; 
-	CAConstraint * horizontalConstraint;
-	CAConstraint * verticalConstraint; 
-	CAConstraint * widthConstraint;
+	CAConstraint * xConst;
+	CAConstraint * yConst; 
+	CAConstraint * wConst;
 }
 @synthesize selected, label, representedObject = _rep, layout, silhouette, highlighted, over;
 
 
-- (id)init
-{
-    self = [super init];
-    if (self) {
+- (id)init {    self = [super init];    if (self) {
 	layout = [CAConstraintLayoutManager layoutManager];
     [self setLayoutManager:layout];
-//	representedObject = arepresentedObject;
-//	CGFloat totes = [[NSScreen mainScreen]frame].size.width / [AtoZ dock].count;
-    self.frame = CGRectMake(0, 0 , 100, 40);
-//	widthConstraint = [CAConstraint constraintWithAttribute:kCAConstraintMaxX
-//												 relativeTo:@"superlayer"
-//												  attribute:kCAConstraintMaxX];    
-	
-	verticalConstraint = [CAConstraint constraintWithAttribute:kCAConstraintMaxY
-													relativeTo:@"superlayer"
-													 attribute:kCAConstraintMaxY
-														offset:2.0];
+	self.anchorPoint = CGPointMake(1, 1);
+//	self.position = CGPointMake(.5,1);
+    self.bounds = CGRectMake(0, 0 , 100, 40);
 
+	[layout 
+//		maxY = AZConstraint(kCAConstraintMaxY,@"superlayer");	
 	[self addObserver:self forKeyPath:@"zPosition" options:0 context:nil];
 	[self addObserver:self forKeyPath:@"transform" options:0 context:nil];
 
@@ -171,7 +163,7 @@
 	silhouette.shadowColor = cgBLACK;
 	silhouette.shadowOpacity = 0.8;
 //	silhouette.anchorPoint = CGPointMake(.5, 1);
-	NSBezierPath *path = [NSBezierPath bezierPathWithRoundedRect:self.frame cornerRadius:5 inCorners:OSBottomLeftCorner | OSBottomRightCorner];
+	NSBezierPath *path = [NSBezierPath bezierPathWithRoundedRect:self.bounds cornerRadius:5 inCorners:OSBottomLeftCorner | OSBottomRightCorner];
 	silhouette.path = [path quartzPath];
 //    highlightLayer = [AZLassoLayer layer];
 //    highlightLayer.fillColor = [NSColor colorWithDeviceRed:0.25f

@@ -9,7 +9,9 @@
 #import "AZTabView.h"
 
 @implementation AZTabView
-
+{
+	NSTrackingArea *trackingArea;
+}
 @synthesize delegate, defaultTabClassName;
 @synthesize startingOffset, tabOffset, tabMagneticForce;
 
@@ -37,7 +39,8 @@
     CALayer *bgLayer = [CALayer layer];
     bgLayer.frame = NSRectToCGRect([self bounds]);
     bgLayer.layoutManager = [CAConstraintLayoutManager layoutManager];
-	
+	bgLayer.anchorPoint = CGPointMake(.5,1);
+	bgLayer.position = CGPointMake(.5,.5);
     [self setLayer:bgLayer];
     [self setWantsLayer:YES];
     
@@ -47,7 +50,7 @@
     tabOffset = 0;
     startingOffset = 0;
     tabMagneticForce = 5;
-    defaultTabClassName = @"SFDefaultTab";
+//    defaultTabClassName = @"SFDefaultTab";
 	
     [self setupObservers];
 }
@@ -148,7 +151,7 @@
 #pragma mark -
 #pragma mark Mouse Handling
 
-- (void)mouseDown: (NSEvent *) theEvent {
+- (void)mouseMoved:(NSEvent *)theEvent {
     // Getting clicked point.
     NSPoint mousePointInView = [self convertPoint:theEvent.locationInWindow fromView:nil];
     
@@ -174,6 +177,12 @@
         
     }
 	
+}
+
+
+
+- (void)scrollWheel:(NSEvent *)theEvent {
+	float a = theEvent.deltaX;
 }
 
 - (void)mouseDragged: (NSEvent *) theEvent {
@@ -674,5 +683,17 @@
     return slideAnimation;
 }
 
+-(void)updateTrackingAreas {
+    if(trackingArea != nil) {
+        [self removeTrackingArea:trackingArea];
+        trackingArea = nil;
+    }
+    int opts = (NSTrackingMouseEnteredAndExited | NSTrackingActiveAlways | NSTrackingMouseMoved );
+    trackingArea = [ [NSTrackingArea alloc] initWithRect:[self bounds]
+												 options:opts
+												   owner:self
+												userInfo:nil];
+    [self addTrackingArea:trackingArea];
+}
 
 @end
