@@ -7,18 +7,29 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#import <AtoZ/AtoZ.h>
 #import "SFTabView.h"
+#import "SFDefaultTab.h"
 
-@interface SFTabViewAppDelegate : NSObject <NSApplicationDelegate, SFTabViewDelegate> {	
+typedef enum { 	ShroudIsUp, ShroudIsDown} ShroudIs;
+
+@class TransparentWindow;
+@interface SFTabViewAppDelegate : NSObject <NSApplicationDelegate, SFTabViewDelegate, NSWindowDelegate, SFDefaultTabDelegate> {
 	int number;
+
 	
 }
+//@property (assign) NSRect 	pushedScreenRect;
+//@property (assign) NSRect 	unPushedScreenRect;
+//@property (assign) NSRect 	barFrame;
+//@property (assign) NSRect 	barFrameUp;
 
-@property (nonatomic, retain) IBOutlet NSWindow *window;
 @property (nonatomic, retain) IBOutlet SFTabView *tabView;
 
+@property (assign) ShroudIs shroudState;
 
-- (void) removeTab: (id) sender;
-- (void) addTab: (id) sender;
+- (IBAction) toggleActive:(id)sender;
+- (IBAction) removeTab: (id) sender;
+- (IBAction) addTab: (id) sender;
 
 @end

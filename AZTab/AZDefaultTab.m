@@ -44,8 +44,8 @@
 	barShapes = [CAShapeLayer layer];
 	barShapes.fillColor = _rep.color.CGColor;
 	barShapes.frame = self.bounds;
-	barShapes.anchorPoint = CGPointMake(.5,1);
-	barShapes.position = CGPointMake(.5,1);
+	barShapes.anchorPoint = CGPointMake(1,1);
+	barShapes.position = CGPointMake(1,1);
 	barShapes.autoresizingMask = kCALayerWidthSizable;
 	
 	barShapes.shadowOffset = CGSizeMake(2, -2);
@@ -63,6 +63,8 @@
 @end
 
 
+
+
 @interface AZDefaultTab ()
 @property (strong, nonatomic) CATextLayerNoHit *label;
 @property (strong, nonatomic) CALayerNoHit *over;
@@ -72,25 +74,29 @@
 
 @implementation AZDefaultTab {	 
 	AZFile *_rep; 
-	CAConstraint * xConst;
-	CAConstraint * yConst; 
-	CAConstraint * wConst;
+	CAConstraint * maxX;
+	CAConstraint * maxY; 
+	CAConstraint * superWide;
+	CAConstraint * superHigh;
+	NSArray* maxConstraints;
 }
 @synthesize selected, label, representedObject = _rep, layout, silhouette, highlighted, over;
 
 
 - (id)init {    self = [super init];    if (self) {
 	layout = [CAConstraintLayoutManager layoutManager];
-    [self setLayoutManager:layout];
-	self.anchorPoint = CGPointMake(1, 1);
-//	self.position = CGPointMake(.5,1);
+    self.layoutManager = layout;
+	self.anchorPoint = CGPointMake(0, 1);
+	self.position = CGPointMake(0,self.superlayer.frame.size.height);
     self.bounds = CGRectMake(0, 0 , 100, 40);
-
-	[layout 
-//		maxY = AZConstraint(kCAConstraintMaxY,@"superlayer");	
+	maxX = AZConstraint(kCAConstraintMaxX,@"superlayer");
+	maxY = AZConstraint(kCAConstraintMaxY,@"superlayer");
+	superWide = AZConstraint(kCAConstraintWidth,@"superlayer");
+	superHigh = AZConstraint(kCAConstraintHeight,@"superlayer");
+	maxConstraints =$array(maxX,maxY,superWide,superHigh);
+	
 	[self addObserver:self forKeyPath:@"zPosition" options:0 context:nil];
 	[self addObserver:self forKeyPath:@"transform" options:0 context:nil];
-
 	}
 	return self;
 }
@@ -102,10 +108,11 @@
 //			NSLog(@"received notification of change to z position");
 			label.string = $(@"Spot:%i Z:%i", _rep.spot, (int)self.zPosition);
 		}
-		if ([key isEqual:@"zPosition"]) {
-			NSLog(@"received notification of change to transform");
-			[label setConstraints:$array(widthConstraint, verticalConstraint)];
-		}
+//		if ([key isEqual:@"zPosition"]) {
+//			NSLog(@"received notification of change to transform");
+//			[label setConstraints:maxConstraints];
+////			 setConstraints:$array([CAConstraint maxX])];
+//		}
 //		else 	// Unrecognized keypath
 //			[superlayer observeValueForKeyPath:key];
 //	}
@@ -186,7 +193,7 @@
 	over.position = CGPointMake(1,0);
 //	over.position = NSMakePoint(self.bounds.size.width-17, 17);
 //	over.contentsGravity = kCAGravityRight;
-    label = [AZLabelLayer layer];	
+    label = [CATextLayerNoHit layer];	
 	//	if ([_representedObject valueForKey:@"name"] != nil) { tabLabel.string = [_representedObject valueForKey:@"name"]; }
 	
 	[label setFontSize:13.0f];
@@ -198,13 +205,13 @@
 	label.truncationMode = kCATruncationEnd;
 //	label.alignmentMode = kCAAlignmentRight;
 //	CAConstraint * horizontalConstraint;
-	[label setConstraints:$array(widthConstraint, verticalConstraint)];
+	[label setConstraints:maxConstraints];// $array(widthConstraint, verticalConstraint)];
 
 //	[self addHighlightLayer];	
 //	[self makelabel];
-	[self addSublayer:silhouette];
-	[self addSublayer:label];
+	[silhouette addSublayer:label];
 	[self addSublayer: over];
+	[self addSublayer:silhouette];
 //	CABasicAnimation *anim = [CABasicAnimation animationWithKeyPath:@"path"];
 //	anim.duration = 1.0;
 //	// flip the path
@@ -264,7 +271,6 @@
 //		CGImageSourceRef imageSource = CGImageSourceCreateWithURL(imageURL, nil);
 //		activeTab = CGImageSourceCreateImageAtIndex(imageSource, 0, nil);
 //		CFRelease(imageURL); CFRelease(imageSource);
-
 		
 //		path = (CFStringRef)[[NSBundle mainBundle] pathForResource:@"inactiveTab" ofType:@"png"];
 //		imageURL = CFURLCreateWithFileSystemPath(nil, path, kCFURLPOSIXPathStyle, NO);
@@ -274,44 +280,36 @@
 //	}
 	
 //	[self setContents: (id)inactiveTab];
--(void) makelabel {
-
-	CAConstraint *constraint = [CAConstraint constraintWithAttribute:kCAConstraintMaxX
-                                                          relativeTo:@"superlayer"
-                                                           attribute:kCAConstraintMaxX];    
-    [label addConstraint:constraint];
-    constraint = [CAConstraint constraintWithAttribute:kCAConstraintMinY
-                                            relativeTo:@"superlayer"
-                                             attribute:kCAConstraintMinY
-												offset:2.0];
-    [label addConstraint:constraint];
-	constraint = [CAConstraint constraintWithAttribute:kCAConstraintMaxX
-                                            relativeTo:@"superlayer"
-                                             attribute:kCAConstraintMaxX
-												offset:-20.0];
-    [label addConstraint:constraint];
-
-	constraint = [CAConstraint constraintWithAttribute:kCAConstraintMinX
-                                            relativeTo:@"superlayer"
-                                             attribute:kCAConstraintMinX
-												offset:20.0];
-    [label addConstraint:constraint];
-	
-	
-	[label setFont:@"LucidaGrande"];
-	
-	[silhouette addSublayer:label];
+//-(void) makelabel {
+//	[label setConstraints:maxConstraints];
+//	CAConstraint *constraint = [CAConstraint constraintWithAttribute:kCAConstraintMaxX
+//                                                          relativeTo:@"superlayer"
+//                                                           attribute:kCAConstraintMaxX];    
+//    [label addConstraint:constraint];
+//    constraint = [CAConstraint constraintWithAttribute:kCAConstraintMinY
+//                                            relativeTo:@"superlayer"
+//                                             attribute:kCAConstraintMinY
+//												offset:2.0];
+//    [label addConstraint:constraint];
+//	constraint = [CAConstraint constraintWithAttribute:kCAConstraintMaxX
+//                                            relativeTo:@"superlayer"
+//                                             attribute:kCAConstraintMaxX
+//												offset:-20.0];
+//    [label addConstraint:constraint];
+//	constraint = [CAConstraint constraintWithAttribute:kCAConstraintMinX
+//                                            relativeTo:@"superlayer"
+//                                             attribute:kCAConstraintMinX
+//												offset:20.0];
+//    [label addConstraint:constraint];
+//	[label setFont:@"LucidaGrande"];	
+//	[silhouette addSublayer:label];
 //	return alabel;
-}
-
-//- (BOOL) selected {
-//	return selected;
 //}
+
 - (void) setSelected:(BOOL)sel {
 //	NSLog(@"%@", self.propertiesPlease);
 	selected = sel;
 //	silhouette.anchorPoint = CGPointMake(1.0f, 1.0f);
-	
     [CATransaction begin]; 
 //    [CATransaction setValue: (id) kCFBooleanTrue forKey: kCATransactionDisableActions];
 	[CATransaction setAnimationDuration:.1];
@@ -325,7 +323,6 @@
 //		sd.y -= 300;
 //		self.position = sd;
 //		self.bounds = g;
-
 //		[self setBounds:g];
 		CATransform3D transform = CATransform3DMakeScale(1.0f,  2.0f , 1.0f);
 		CATransform3D moveit = CATransform3DMakeTranslation(0,  -40, 0);
@@ -336,9 +333,7 @@
 	}  	silhouette.transform = move;
 	[CATransaction commit];
 }
-
-
-- (void)setHighlighted:(BOOL)highlight {
-    highlightLayer.hidden = highlight;
-}
+//- (void)setHighlighted:(BOOL)highlight {
+//    highlightLayer.hidden = highlight;
+//}
 @end

@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 45;
+	objectVersion = 46;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -15,23 +15,48 @@
 		0C5CBD0111BD534200448ADD /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C5CBCFD11BD534200448ADD /* MainMenu.xib */; };
 		0C5CBD0211BD534200448ADD /* tabBg.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C5CBCFE11BD534200448ADD /* tabBg.png */; };
 		0C5CBD1311BD537700448ADD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0C5CBD1111BD537700448ADD /* InfoPlist.strings */; };
-		0CB2673E11984E3100003C49 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CB2673D11984E3100003C49 /* QuartzCore.framework */; };
-		7B92C7C715A72C2300D9BB9B /* AtoZ.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B92C7C615A72C2300D9BB9B /* AtoZ.framework */; };
-		7B92C7D515A72FA300D9BB9B /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B92C7D415A72FA300D9BB9B /* Cocoa.framework */; };
+		7B02370915E0BE640070FE12 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B02370815E0BE640070FE12 /* QuartzCore.framework */; };
+		7B02370A15E0BE6E0070FE12 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B02370815E0BE640070FE12 /* QuartzCore.framework */; };
+		7B02370D15E0BE7A0070FE12 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B02370C15E0BE7A0070FE12 /* Cocoa.framework */; };
+		7B8A29FA15E2632700286E27 /* AtoZ.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BCE78B915E25E4400B53BC6 /* AtoZ.framework */; };
 		7B92C7DB15A72FA300D9BB9B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7B92C7D915A72FA300D9BB9B /* InfoPlist.strings */; };
 		7B92C7DD15A72FA300D9BB9B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B92C7DC15A72FA300D9BB9B /* main.m */; };
 		7B92C7E115A72FA300D9BB9B /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 7B92C7DF15A72FA300D9BB9B /* Credits.rtf */; };
 		7B92C7E715A72FA400D9BB9B /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7B92C7E515A72FA400D9BB9B /* MainMenu.xib */; };
-		7B92C7EB15A72FB100D9BB9B /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CB2673D11984E3100003C49 /* QuartzCore.framework */; };
-		7B92C7EC15A72FB500D9BB9B /* AtoZ.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B92C7C615A72C2300D9BB9B /* AtoZ.framework */; };
 		7B92C7ED15A72FFA00D9BB9B /* AZTabViewAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B92C7C915A72ED700D9BB9B /* AZTabViewAppDelegate.m */; };
 		7B92C7EE15A72FFF00D9BB9B /* AZDefaultTab.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B92C7C415A72B4A00D9BB9B /* AZDefaultTab.m */; };
 		7B92C7F015A7300300D9BB9B /* AZTabView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B92C7CC15A72F1500D9BB9B /* AZTabView.m */; };
 		7B92C7F315A7304000D9BB9B /* PAColorSwatchChooser.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B92C7F215A7304000D9BB9B /* PAColorSwatchChooser.m */; };
 		7B92C7F415A7368300D9BB9B /* tabBg.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C5CBCFE11BD534200448ADD /* tabBg.png */; };
+		7BCE78B815E25DF800B53BC6 /* PLWeakCompatibility.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 7BCE78B715E25DF800B53BC6 /* PLWeakCompatibility.framework */; };
+		7BCE78BA15E25E4400B53BC6 /* AtoZ.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 7BCE78B915E25E4400B53BC6 /* AtoZ.framework */; };
+		7BE639CE15FD70AF004BA700 /* AtoZ.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BCE78B915E25E4400B53BC6 /* AtoZ.framework */; };
 		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
 		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		7B02370E15E0BE8C0070FE12 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 12;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7B9595B615E1D87D0044620B /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				7BCE78B815E25DF800B53BC6 /* PLWeakCompatibility.framework in CopyFiles */,
+				7BCE78BA15E25E4400B53BC6 /* AtoZ.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		0C5CBCF011BD52BA00448ADD /* SFDefaultTab.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SFDefaultTab.h; path = Classes/SFDefaultTab.h; sourceTree = "<group>"; };
@@ -52,9 +77,10 @@
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
 		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		7B02370815E0BE640070FE12 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.7.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
+		7B02370C15E0BE7A0070FE12 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
 		7B92C7C315A72B4A00D9BB9B /* AZDefaultTab.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AZDefaultTab.h; sourceTree = "<group>"; };
 		7B92C7C415A72B4A00D9BB9B /* AZDefaultTab.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AZDefaultTab.m; sourceTree = "<group>"; };
-		7B92C7C615A72C2300D9BB9B /* AtoZ.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AtoZ.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.7.sdk/System/Library/Frameworks/AtoZ.framework; sourceTree = DEVELOPER_DIR; };
 		7B92C7C815A72ED700D9BB9B /* AZTabViewAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AZTabViewAppDelegate.h; path = ../AZTab/AZTabViewAppDelegate.h; sourceTree = "<group>"; };
 		7B92C7C915A72ED700D9BB9B /* AZTabViewAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AZTabViewAppDelegate.m; path = ../AZTab/AZTabViewAppDelegate.m; sourceTree = "<group>"; };
 		7B92C7CB15A72F1500D9BB9B /* AZTabView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AZTabView.h; sourceTree = "<group>"; };
@@ -69,6 +95,8 @@
 		7B92C7E615A72FA400D9BB9B /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		7B92C7F115A7304000D9BB9B /* PAColorSwatchChooser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PAColorSwatchChooser.h; sourceTree = "<group>"; };
 		7B92C7F215A7304000D9BB9B /* PAColorSwatchChooser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PAColorSwatchChooser.m; sourceTree = "<group>"; };
+		7BCE78B715E25DF800B53BC6 /* PLWeakCompatibility.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PLWeakCompatibility.framework; path = "../../../../disenchanted 750/DerivedData/PLWeakCompatibility-chfkqnybfsbbfpfbkrdmefgadcvh/Build/Products/Debug/PLWeakCompatibility.framework"; sourceTree = "<group>"; };
+		7BCE78B915E25E4400B53BC6 /* AtoZ.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AtoZ.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D1107310486CEB800E47090 /* AZTabView-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "AZTabView-Info.plist"; sourceTree = "<group>"; };
 		8D1107320486CEB800E47090 /* AZTabView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AZTabView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -78,9 +106,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7B92C7D515A72FA300D9BB9B /* Cocoa.framework in Frameworks */,
-				7B92C7EC15A72FB500D9BB9B /* AtoZ.framework in Frameworks */,
-				7B92C7EB15A72FB100D9BB9B /* QuartzCore.framework in Frameworks */,
+				7B02370D15E0BE7A0070FE12 /* Cocoa.framework in Frameworks */,
+				7B02370A15E0BE6E0070FE12 /* QuartzCore.framework in Frameworks */,
+				7BE639CE15FD70AF004BA700 /* AtoZ.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,9 +116,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7B92C7C715A72C2300D9BB9B /* AtoZ.framework in Frameworks */,
+				7B02370915E0BE640070FE12 /* QuartzCore.framework in Frameworks */,
 				8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */,
-				0CB2673E11984E3100003C49 /* QuartzCore.framework in Frameworks */,
+				7B8A29FA15E2632700286E27 /* AtoZ.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -160,6 +188,10 @@
 		29B97314FDCFA39411CA2CEA /* SFTabView */ = {
 			isa = PBXGroup;
 			children = (
+				7BCE78B915E25E4400B53BC6 /* AtoZ.framework */,
+				7BCE78B715E25DF800B53BC6 /* PLWeakCompatibility.framework */,
+				7B02370C15E0BE7A0070FE12 /* Cocoa.framework */,
+				7B02370815E0BE640070FE12 /* QuartzCore.framework */,
 				080E96DDFE201D6D7F000001 /* Classes */,
 				29B97317FDCFA39411CA2CEA /* Resources */,
 				29B97315FDCFA39411CA2CEA /* Other Sources */,
@@ -181,7 +213,6 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				7B92C7C615A72C2300D9BB9B /* AtoZ.framework */,
 				0C5CBCFD11BD534200448ADD /* MainMenu.xib */,
 				0CB2672111984D2800003C49 /* Images */,
 				8D1107310486CEB800E47090 /* AZTabView-Info.plist */,
@@ -248,6 +279,7 @@
 				7B92C7CE15A72FA300D9BB9B /* Sources */,
 				7B92C7CF15A72FA300D9BB9B /* Frameworks */,
 				7B92C7D015A72FA300D9BB9B /* Resources */,
+				7B02370E15E0BE8C0070FE12 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -265,6 +297,7 @@
 				8D1107290486CEB800E47090 /* Resources */,
 				8D11072C0486CEB800E47090 /* Sources */,
 				8D11072E0486CEB800E47090 /* Frameworks */,
+				7B9595B615E1D87D0044620B /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -281,8 +314,11 @@
 /* Begin PBXProject section */
 		29B97313FDCFA39411CA2CEA /* Project object */ = {
 			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0440;
+			};
 			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "AZTabView" */;
-			compatibilityVersion = "Xcode 3.1";
+			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 1;
 			knownRegions = (
@@ -389,10 +425,15 @@
 		7B92C7E915A72FA400D9BB9B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ENABLE_OBJC_ARC = YES;
+				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../../../disenchanted 750/DerivedData/AtoZ-hfqteqfcvjfinlajqwkydsqyzpiz/Build/Products/Debug\"",
+				);
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -406,9 +447,11 @@
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				INFOPLIST_FILE = "AZTabView/AZTabView-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks @executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
+				SDKROOT = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -416,11 +459,16 @@
 		7B92C7EA15A72FA400D9BB9B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ENABLE_OBJC_ARC = YES;
+				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../../../disenchanted 750/DerivedData/AtoZ-hfqteqfcvjfinlajqwkydsqyzpiz/Build/Products/Debug\"",
+				);
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "AZTabView/AZTabView-Prefix.pch";
@@ -428,9 +476,11 @@
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				INFOPLIST_FILE = "AZTabView/AZTabView-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks @executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
+				SDKROOT = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -441,18 +491,24 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ENABLE_OBJC_ARC = YES;
+				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
 				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_ENABLE_FIX_AND_CONTINUE = YES;
 				GCC_MODEL_TUNING = G5;
 				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
 				GCC_PREFIX_HEADER = AZTabView_Prefix.pch;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INFOPLIST_FILE = "AZTabView-Info.plist";
 				INSTALL_PATH = "$(HOME)/Applications";
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/../Frameworks @loader_path/../Frameworks";
+				PRECOMPS_INCLUDE_HEADERS_FROM_BUILT_PRODUCTS_DIR = NO;
 				PRODUCT_NAME = AZTabView;
-				SDKROOT = macosx10.7;
+				SDKROOT = "";
 			};
 			name = Debug;
 		};
@@ -462,41 +518,46 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ENABLE_OBJC_ARC = YES;
+				COMBINE_HIDPI_IMAGES = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
 				GCC_MODEL_TUNING = G5;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
 				GCC_PREFIX_HEADER = AZTabView_Prefix.pch;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INFOPLIST_FILE = "AZTabView-Info.plist";
 				INSTALL_PATH = "$(HOME)/Applications";
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/../Frameworks @loader_path/../Frameworks";
+				PRECOMPS_INCLUDE_HEADERS_FROM_BUILT_PRODUCTS_DIR = NO;
 				PRODUCT_NAME = AZTabView;
-				SDKROOT = macosx10.7;
+				SDKROOT = "";
 			};
 			name = Release;
 		};
 		C01FCF4F08A954540054247B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
-				GCC_C_LANGUAGE_STANDARD = gnu99;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = "compiler-default";
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				PREBINDING = NO;
-				SDKROOT = macosx10.6;
+				SDKROOT = "";
 			};
 			name = Debug;
 		};
 		C01FCF5008A954540054247B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
-				GCC_C_LANGUAGE_STANDARD = gnu99;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = "compiler-default";
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				PREBINDING = NO;
-				SDKROOT = macosx10.6;
+				SDKROOT = "";
 			};
 			name = Release;
 		};
@@ -510,6 +571,7 @@
 				7B92C7EA15A72FA400D9BB9B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "SFTabView" */ = {
 			isa = XCConfigurationList;

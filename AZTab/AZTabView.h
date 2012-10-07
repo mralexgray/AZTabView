@@ -98,8 +98,7 @@
 //////////////////////////////////////////////////////////////////////////////////////////
 
 
-#pragma mark -
-#pragma mark Adding and Removing Tabs
+#pragma mark - Adding and Removing Tabs
 
 /** 
  @brief Add a new tab to the tabview, using the representedObject as model.
@@ -149,8 +148,7 @@
 //////////////////////////////////////////////////////////////////////////////////////////
 
 
-#pragma mark -
-#pragma mark Accessing Tabs
+#pragma mark - Accessing Tabs
 
 
 /** 
@@ -208,8 +206,7 @@
 //////////////////////////////////////////////////////////////////////////////////////////
 
 
-#pragma mark -
-#pragma mark Selecting a Tab
+#pragma mark - Selecting a Tab
 
 
 /** 
@@ -302,8 +299,7 @@
 //////////////////////////////////////////////////////////////////////////////////////////
 
 
-#pragma mark -
-#pragma mark Scrolling
+#pragma mark - Scrolling
 
 
 /** 
@@ -329,8 +325,7 @@
 
 @end
 
-#pragma mark -
-#pragma mark Private Methods
+#pragma mark - Private Methods
 
 @interface AZTabView (Private)
 
@@ -350,8 +345,7 @@
 @end
 
 
-#pragma mark -
-#pragma mark AZTabView Delegate protocol
+#pragma mark - AZTabView Delegate protocol
 
 
 /**

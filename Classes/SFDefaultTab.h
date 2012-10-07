@@ -9,17 +9,26 @@
 #import <Cocoa/Cocoa.h>
 #import <QuartzCore/QuartzCore.h>
 #import "SFTabView.h"
+#import <AtoZ/AtoZ.h>
 
 @interface SFLabelLayer : CATextLayer {}
 @end
 
+@protocol SFDefaultTabDelegate <NSObject>
 
-@interface SFDefaultTab : CALayer {
-    id _representedObject;
-}
+- (BOOL) fitToFrame;
+- (NSRect) frame;
+- (int) numberOfTabs;
 
-- (void) setRepresentedObject: (id) representedObject;
-- (void) setSelected: (BOOL) selected;
+@end
+
+
+@interface SFDefaultTab : CALayer
+
+@property (nonatomic, assign) NSObject <SFDefaultTabDelegate> *viewDelegate;
+@property (nonatomic, retain) AZFile *representedObject;
+@property (nonatomic, assign) BOOL selected;
 
 
 @end
+

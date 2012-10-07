@@ -2,9 +2,6 @@
 //  AZTabView.m
 //  AZTabView
 //
-//  Created by Alex Gray on 7/6/12.
-//  Copyright (c) 2012 mrgray.com, inc. All rights reserved.
-//
 
 #import "AZTabView.h"
 
@@ -15,11 +12,9 @@
 @synthesize delegate, defaultTabClassName;
 @synthesize startingOffset, tabOffset, tabMagneticForce;
 
-#pragma mark -
-#pragma mark Constructors
+#pragma mark - Constructors
 
-- (void) awakeFromNib {
-	
+- (void) awakeFromNib {	
 	[self setDefaults];
 	
 }
@@ -27,36 +22,34 @@
 - (id)initWithFrame:(NSRect)frame {
     self = [super initWithFrame:frame];
     if (self) {
-        [self setDefaults];
+		CALayer *bgLayer = [CALayer layer];
+		bgLayer.frame = NSRectToCGRect([self bounds]);
+//		bgLayer.anchorPoint = CGPointMake(0,0);
+		bgLayer.layoutManager = [CAConstraintLayoutManager layoutManager];
+//	bgLayer.position = CGPointMake(.5,.5);
+		[self setLayer:bgLayer];
+		[self setWantsLayer:YES];
+		
+		[self.layer addSublayer:[self scrollLayer]];
+		
+		arrangedTabs = [[NSMutableArray alloc]init];
+		tabOffset = 0;
+		startingOffset = 0;
+		tabMagneticForce = 5;
+		//    defaultTabClassName = @"SFDefaultTab";
+		
+		[self setupObservers];
+//        [self setDefaults];
     }
     return self;
 }
 
-#pragma mark -
-#pragma mark Defaults
+#pragma mark - Defaults
 
 - (void) setDefaults {
-    CALayer *bgLayer = [CALayer layer];
-    bgLayer.frame = NSRectToCGRect([self bounds]);
-    bgLayer.layoutManager = [CAConstraintLayoutManager layoutManager];
-	bgLayer.anchorPoint = CGPointMake(.5,1);
-	bgLayer.position = CGPointMake(.5,.5);
-    [self setLayer:bgLayer];
-    [self setWantsLayer:YES];
-    
-    [self.layer addSublayer:[self scrollLayer]];
-    
-    arrangedTabs = [[NSMutableArray alloc]init];
-    tabOffset = 0;
-    startingOffset = 0;
-    tabMagneticForce = 5;
-//    defaultTabClassName = @"SFDefaultTab";
-	
-    [self setupObservers];
 }
 
-#pragma mark -
-#pragma mark Obververs
+#pragma mark - Obververs
 
 - (void) setupObservers {
     [[NSNotificationCenter defaultCenter] addObserver:self 
@@ -96,9 +89,7 @@
 	
 }
 
-#pragma mark -
-#pragma mark Base Layers
-
+#pragma mark - Base Layers
 - (CALayer *) tabsLayer {
     tabsLayer = [CALayer layer];
     tabsLayer.name = @"tabsLayer";
@@ -106,7 +97,7 @@
     tabsLayer.layoutManager = [CAConstraintLayoutManager layoutManager];
 	
     [tabsLayer addConstraint:[CAConstraint constraintWithAttribute:kCAConstraintHeight relativeTo:@"superlayer" attribute:kCAConstraintHeight]];
-    [tabsLayer addConstraint:[CAConstraint constraintWithAttribute:kCAConstraintMinY relativeTo:@"superlayer" attribute:kCAConstraintMinY]];
+    [tabsLayer addConstraint:[CAConstraint constraintWithAttribute:kCAConstraintMaxY relativeTo:@"superlayer" attribute:kCAConstraintMaxY]];
     [tabsLayer addConstraint:[CAConstraint constraintWithAttribute:kCAConstraintMaxY relativeTo:@"superlayer" attribute:kCAConstraintMaxY]];
 	
     NSMutableDictionary *actions=[NSMutableDictionary dictionaryWithDictionary:[tabsLayer actions]];
@@ -148,8 +139,8 @@
     return scrollLayer;
 }
 
-#pragma mark -
-#pragma mark Mouse Handling
+
+#pragma mark - Mouse Handling
 
 - (void)mouseMoved:(NSEvent *)theEvent {
     // Getting clicked point.
@@ -272,8 +263,7 @@
 	
 }
 
-#pragma mark -
-#pragma mark Adding and Removing Tabs
+#pragma mark - Adding and Removing Tabs
 
 - (void) addTabWithRepresentedObject: (id) representedObject {
 	[self addTabAtIndex:[self numberOfTabs] withRepresentedObject:representedObject];
@@ -413,8 +403,7 @@
 	[self adjustTabLayerScrollAnimated:YES];
 }
 
-#pragma mark -
-#pragma mark Accessing Tabs
+#pragma mark - Accessing Tabs
 
 - (int) indexOfTab: (CALayer *) tab {
     return [arrangedTabs indexOfObject:tab];
@@ -440,8 +429,7 @@
     return [arrangedTabs lastObject];
 }
 
-#pragma mark -
-#pragma mark Selecting a Tab
+#pragma mark - Selecting a Tab
 
 - (void) selectTab: (CALayer *) tab {
 	
@@ -512,8 +500,7 @@
     return currentSelectedTab;
 }
 
-#pragma mark -
-#pragma mark Scrolling
+#pragma mark - Scrolling
 
 - (void) scrollToTab: (CALayer *) tab {
     [self scrollToTab:tab animated:YES];
@@ -582,8 +569,7 @@
 }
 
 
-#pragma mark -
-#pragma mark Tab Handling
+#pragma mark - Tab Handling
 
 
 
@@ -644,8 +630,7 @@
 	
 }
 
-#pragma mark -
-#pragma mark Utility methods
+#pragma mark - Utility methods
 
 /* Return a correctly ordered (depepending on direction) tab indexes array */
 - (NSArray *) tabSequenceForStartingTabIndex: (int) startingIndex endingTabIndex: (int) endingIndex direction: (BOOL) direction {

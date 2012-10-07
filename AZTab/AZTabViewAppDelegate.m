@@ -19,7 +19,6 @@
 }
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
-
 	tabView.delegate = self;
     tabView.tabOffset = -15;
     tabView.startingOffset = 20;
@@ -41,7 +40,6 @@
 		[tabView addTabWithRepresentedObject:t];
 		number++;
 	}];		
-
 	colorBar.tabOffset = -10;
 	colorBar.startingOffset = 20;
 	colorBar.defaultTabClassName = @"AZColorBar";
