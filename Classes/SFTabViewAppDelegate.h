@@ -11,7 +11,7 @@
 #import "SFTabView.h"
 #import "SFDefaultTab.h"
 
-typedef enum { 	ShroudIsUp, ShroudIsDown} ShroudIs;
+//typedef enum { 	ShroudIsUp, ShroudIsDown} ShroudIs;
 
 @class TransparentWindow;
 @interface SFTabViewAppDelegate : NSObject <NSApplicationDelegate, SFTabViewDelegate, NSWindowDelegate, SFDefaultTabDelegate> {

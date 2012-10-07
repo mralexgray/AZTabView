@@ -265,7 +265,7 @@
 }
 - (void) applicationDidResignActive:(NSNotification *)notification{
 
-	[@[_window.win, _shroud.win] each:^(id obj, NSUInteger index, BOOL *stop) {
+	[@[_window.win, _shroud.win] az_each:^(id obj, NSUInteger index, BOOL *stop) {
 		if ([obj isVisible]) [obj fadeOutWithDuration:.001];
 	}];
 	[_shroud.win setFrame:unPushedScreenRect  display:NO animate:NO];
@@ -330,9 +330,9 @@
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
 	__block NSArray *thradedArray;
 	[NSThread performBlockInBackground:^{
-		thradedArray = [AtoZ dockSorted];
+		thradedArray = [AZFolder appFolder];//[AtoZ dockSorted];
 		[[NSThread mainThread] performBlock:^{
-			[thradedArray each:^(AZFile * obj, NSUInteger index, BOOL *stop) {
+			[thradedArray az_each:^(AZFile * obj, NSUInteger index, BOOL *stop) {
 				number++;
 				[tabView addTabWithRepresentedObject: obj];//@{ @"name": obj.name }];
 			}];

@@ -18,7 +18,8 @@
 		7B02370915E0BE640070FE12 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B02370815E0BE640070FE12 /* QuartzCore.framework */; };
 		7B02370A15E0BE6E0070FE12 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B02370815E0BE640070FE12 /* QuartzCore.framework */; };
 		7B02370D15E0BE7A0070FE12 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B02370C15E0BE7A0070FE12 /* Cocoa.framework */; };
-		7B8A29FA15E2632700286E27 /* AtoZ.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BCE78B915E25E4400B53BC6 /* AtoZ.framework */; };
+		7B18225516222ED100C19DBB /* AtoZ.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B18225416222ED100C19DBB /* AtoZ.framework */; };
+		7B18225616222F6A00C19DBB /* AtoZ.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B18225416222ED100C19DBB /* AtoZ.framework */; };
 		7B92C7DB15A72FA300D9BB9B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7B92C7D915A72FA300D9BB9B /* InfoPlist.strings */; };
 		7B92C7DD15A72FA300D9BB9B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B92C7DC15A72FA300D9BB9B /* main.m */; };
 		7B92C7E115A72FA300D9BB9B /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 7B92C7DF15A72FA300D9BB9B /* Credits.rtf */; };
@@ -29,8 +30,6 @@
 		7B92C7F315A7304000D9BB9B /* PAColorSwatchChooser.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B92C7F215A7304000D9BB9B /* PAColorSwatchChooser.m */; };
 		7B92C7F415A7368300D9BB9B /* tabBg.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C5CBCFE11BD534200448ADD /* tabBg.png */; };
 		7BCE78B815E25DF800B53BC6 /* PLWeakCompatibility.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 7BCE78B715E25DF800B53BC6 /* PLWeakCompatibility.framework */; };
-		7BCE78BA15E25E4400B53BC6 /* AtoZ.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 7BCE78B915E25E4400B53BC6 /* AtoZ.framework */; };
-		7BE639CE15FD70AF004BA700 /* AtoZ.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BCE78B915E25E4400B53BC6 /* AtoZ.framework */; };
 		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
 		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
 /* End PBXBuildFile section */
@@ -52,7 +51,6 @@
 			dstSubfolderSpec = 10;
 			files = (
 				7BCE78B815E25DF800B53BC6 /* PLWeakCompatibility.framework in CopyFiles */,
-				7BCE78BA15E25E4400B53BC6 /* AtoZ.framework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,6 +77,7 @@
 		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
 		7B02370815E0BE640070FE12 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.7.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
 		7B02370C15E0BE7A0070FE12 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
+		7B18225416222ED100C19DBB /* AtoZ.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AtoZ.framework; path = ../../../../../Library/Frameworks/AtoZ.framework; sourceTree = "<group>"; };
 		7B92C7C315A72B4A00D9BB9B /* AZDefaultTab.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AZDefaultTab.h; sourceTree = "<group>"; };
 		7B92C7C415A72B4A00D9BB9B /* AZDefaultTab.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AZDefaultTab.m; sourceTree = "<group>"; };
 		7B92C7C815A72ED700D9BB9B /* AZTabViewAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AZTabViewAppDelegate.h; path = ../AZTab/AZTabViewAppDelegate.h; sourceTree = "<group>"; };
@@ -96,7 +95,6 @@
 		7B92C7F115A7304000D9BB9B /* PAColorSwatchChooser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PAColorSwatchChooser.h; sourceTree = "<group>"; };
 		7B92C7F215A7304000D9BB9B /* PAColorSwatchChooser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PAColorSwatchChooser.m; sourceTree = "<group>"; };
 		7BCE78B715E25DF800B53BC6 /* PLWeakCompatibility.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PLWeakCompatibility.framework; path = "../../../../disenchanted 750/DerivedData/PLWeakCompatibility-chfkqnybfsbbfpfbkrdmefgadcvh/Build/Products/Debug/PLWeakCompatibility.framework"; sourceTree = "<group>"; };
-		7BCE78B915E25E4400B53BC6 /* AtoZ.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AtoZ.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D1107310486CEB800E47090 /* AZTabView-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "AZTabView-Info.plist"; sourceTree = "<group>"; };
 		8D1107320486CEB800E47090 /* AZTabView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AZTabView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -106,9 +104,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7B18225516222ED100C19DBB /* AtoZ.framework in Frameworks */,
 				7B02370D15E0BE7A0070FE12 /* Cocoa.framework in Frameworks */,
 				7B02370A15E0BE6E0070FE12 /* QuartzCore.framework in Frameworks */,
-				7BE639CE15FD70AF004BA700 /* AtoZ.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -116,9 +114,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7B18225616222F6A00C19DBB /* AtoZ.framework in Frameworks */,
 				7B02370915E0BE640070FE12 /* QuartzCore.framework in Frameworks */,
 				8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */,
-				7B8A29FA15E2632700286E27 /* AtoZ.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -188,7 +186,7 @@
 		29B97314FDCFA39411CA2CEA /* SFTabView */ = {
 			isa = PBXGroup;
 			children = (
-				7BCE78B915E25E4400B53BC6 /* AtoZ.framework */,
+				7B18225416222ED100C19DBB /* AtoZ.framework */,
 				7BCE78B715E25DF800B53BC6 /* PLWeakCompatibility.framework */,
 				7B02370C15E0BE7A0070FE12 /* Cocoa.framework */,
 				7B02370815E0BE640070FE12 /* QuartzCore.framework */,
